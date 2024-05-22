@@ -11,5 +11,25 @@
             <field name="view_mode">tree,form</field>
             <field name="domain">[]</field>
         </record>
+
+        <record id="hms_patient_views" model="ir.ui.view">
+            <field name="name">hms.patient.views</field>
+            <field name="model">hms.patient</field>
+            <field name="arch" type="xml">
+                    <group>
+                        <field name="first_name"/>
+                        <field name="last_name"/>
+                        <field name="birth_date"/>
+                        <field name="history"/>
+                        <field name="cr_ratio"/>
+                        <field name="blood_type"/>
+                        <field name="pcr"/>
+                        <field name="image"/>
+                        <field name="address"/>
+                        <field name="age"/>
+                    </group>
+            </field>
+        </record>
+
     </data>
 </odoo>
