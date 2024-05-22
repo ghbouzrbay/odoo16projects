@@ -1,0 +1,15 @@
+<odoo>
+    <data>
+        <!-- Menu Structure -->
+        <menuitem id="menu_hms" name="HMS" sequence="10"/>
+        <menuitem id="menu_hms_patients" name="Patients" parent="menu_hms" action="action_hms_patients"/>
+
+        <!-- Action to view patients -->
+        <record id="action_hms_patients" model="ir.actions.act_window">
+            <field name="name">Patients</field>
+            <field name="res_model">hms.patient</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[]</field>
+        </record>
+    </data>
+</odoo>
